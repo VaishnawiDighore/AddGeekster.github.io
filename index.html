@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Vaishu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="h2">
+      <h2>Admission Form for Geekster</h2>
+    </div>
+    <div class="container">
+      <form>
+        <!-- First Name,last Name,Mail<
+            contact Number,Gender,DOB,Addres,
+            Degree,Collage Name,YoG, %,resume
+         -->
+        <h4>Personal Info</h4>
+        <input
+          type="text"
+          class="inline"
+          name="f_name"
+          placeholder="First Name"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="text"
+          class="inline"
+          name="l_name"
+          placeholder="Last Name"
+        />
+        <br />
+        <input
+          type="email"
+          class="inline"
+          name="mail"
+          placeholder="Email Id"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="tel"
+          class="inline"
+          name="phone"
+          placeholder="Phone Number"
+          required
+          pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+          title="Please enter in the format 1111-111-111"
+        />
+        <br />
+        <input class="inline" type="date" name="DOB" max="2022-01-011" />
+        <select class="inline" name="gender">
+          <option selected disabled>Select Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+    </br>
+        <textarea name="address" placeholder="address"></textarea>
+        <hr/>
+        <h4>Education Info</h4>
+        <select name="degree">
+          <option selected disabled>Select Degree</option>
+          <optgroup lable1="Bachelors">
+            <option>B.Tech</option>
+            <option>B.E.</option>
+            <option>B.Sc.</option>
+          </optgroup>
+
+          <optgroup lable1="Masters">
+            <option>M.Tech</option>
+            <option>M.E.</option>
+            <option>M.Sc</option>
+          </optgroup>
+        </select>
+        <input type="text" name="collage" placeholder="collage_name" />
+    </br>
+        <input type="number" name="graduation_year" placeholder="Year" />
+        <input type="number" name="percentage" placeholder="percentage" />
+</br>
+        <input type="file" />
+        <hr />
+        <h4>Course Details</h4>
+        <input type="radio" class="inline" name="course_type" />Fundamentals
+        <input type="radio" class="inline" name="course_type" />Advanced
+        <br />
+        <input type="checkbox" class="inline" name="course_name" />Web
+        <input type="checkbox" class="inline" name="course_name" />DSA
+        <hr />
+        <input class="inline" type="submit" value="Apply for Admission" />
+        <input class="inline" type="reset" />
+      </form>
+    </div>
+  </body>
+</html>
+
